@@ -36,7 +36,7 @@ public class TriggerUtils
 			return newList;
 		}
 
-		for (sObject obj : newList)
+		for (sObject newObj : newList)
 		{
             		// On Update - newList and oldMap are not NULL
 			// TODO: Iterate over the sObjects and compare the fields from newList and oldMap
