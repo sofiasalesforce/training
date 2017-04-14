@@ -21,6 +21,6 @@ public with sharing class AccountTriggerHandler extends TriggerHandler
    
 	private void printAccountName ()
 	{
-    		// TODO: Print the new Account.Name, only if the Name field has been changed. 
+    		// TODO: Print the new Account.Name using System.debug(), only if the 'Name' field has been changed. 
 	}
 }
