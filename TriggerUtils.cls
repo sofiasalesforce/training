@@ -27,12 +27,12 @@ public class TriggerUtils
 		List<sObject> result = new List<sObject>();
 		if(newList == null)
 		{
-			// OnDelete - return empty list. No records has been changed
+			// OnDelete - return an empty list. No records has been changed
 			return result;
 		}
 		if(oldList == null)
 		{
-			// OnInsert - All records has been changed
+			// OnInsert - return all records from 'newList'
 			return newList;
 		}
 
