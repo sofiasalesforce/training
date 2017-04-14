@@ -14,4 +14,34 @@ public class TriggerUtils
 		*/
 		return null;
 	}
+	
+	/*
+	*	@description Return only records with modified field values in 'fieldList'.
+	*	Input: 
+	*		newList - Trigger.new records
+	*		oldMap - Trigger.oldMap records
+	*		fieldList - List of custom or standard sObject-fields.
+	*/
+	public static List<sObject> getModifiedObjectsObj (List<sObject> newList, Map<Id, sObject> oldMap, List<String> fieldList)
+	{
+		List<sObject> result = new List<sObject>();
+		if(newList == null)
+		{
+			// OnDelete - return empty list. No records has been changed
+			return result;
+		}
+		if(oldList == null)
+		{
+			// OnInsert - All records has been changed
+			return newList;
+		}
+
+		for (sObject obj : newList)
+		{
+            		// On Update - newList and oldMap are not NULL
+			// TODO: Iterate over the sObjects and compare the fields from newList and oldMap
+			// TODO: add the 'obj' to the 'result' if one of the field from 'fieldList' has been changed
+		}
+		return result;
+	}
 }
