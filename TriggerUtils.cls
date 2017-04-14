@@ -22,7 +22,7 @@ public class TriggerUtils
 	*		oldMap - Trigger.oldMap records
 	*		fieldList - List of custom or standard sObject-fields.
 	*/
-	public static List<sObject> getModifiedObjectsObj (List<sObject> newList, Map<Id, sObject> oldMap, List<String> fieldList)
+	public static List<sObject> getModifiedRecords (List<sObject> newList, Map<Id, sObject> oldMap, List<String> fieldList)
 	{
 		List<sObject> result = new List<sObject>();
 		if(newList == null)
