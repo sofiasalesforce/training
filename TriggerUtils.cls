@@ -1,11 +1,8 @@
 
-/*
-* TODO: Create an Apex class TriggerUtils
-*/
 public class TriggerUtils
 {
 	/*
-	* Note: sObject - all standard and custom objects, 
+	* 	Note:	sObject - all standard and custom objects, 
 	*		Object - all primitive data types Decimal, String, Integer, Boolean
 	*
 	*/
