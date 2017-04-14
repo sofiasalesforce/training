@@ -18,7 +18,10 @@ public with sharing class AccountTriggerHandler extends TriggerHandler
 	{
 		printAccountName();
 	}
-   
+   	
+	/*
+	*	@description Iterate over all records and print out the Account.Name.
+	*/
 	private void printAccountName ()
 	{
     		// TODO: Print the new Account.Name using System.debug(), only if the 'Name' field has been changed. 
