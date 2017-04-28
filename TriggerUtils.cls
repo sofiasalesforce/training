@@ -30,7 +30,7 @@ public class TriggerUtils
 			// OnDelete - return an empty list. No records has been changed
 			return result;
 		}
-		if(oldList == null)
+		if(oldMap == null)
 		{
 			// OnInsert - return all records from 'newList'
 			return newList;
